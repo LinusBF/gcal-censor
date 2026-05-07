@@ -1,0 +1,125 @@
+:root {
+  color-scheme: light dark;
+  font-family: "Google Sans", Arial, sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #111827;
+  margin: 0;
+  min-width: 260px;
+}
+
+.popup {
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+}
+
+.header {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 34px 1fr;
+}
+
+.mark {
+  background: #111827;
+  border-radius: 7px;
+  height: 22px;
+  position: relative;
+  width: 34px;
+}
+
+.mark::before,
+.mark::after {
+  background: #000;
+  border-radius: 999px;
+  content: "";
+  left: 5px;
+  position: absolute;
+  right: 5px;
+}
+
+.mark::before {
+  height: 4px;
+  top: 6px;
+}
+
+.mark::after {
+  bottom: 6px;
+  height: 4px;
+}
+
+h1 {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+}
+
+p {
+  color: #4b5563;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 1px 0 0;
+}
+
+.toggle {
+  align-items: center;
+  background: #111827;
+  border: 0;
+  border-radius: 7px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  font-weight: 600;
+  gap: 8px;
+  justify-content: center;
+  line-height: 18px;
+  min-height: 38px;
+  padding: 9px 12px;
+}
+
+.toggle:hover:not(:disabled) {
+  background: #000;
+}
+
+.toggle:disabled {
+  background: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.toggle.is-on {
+  background: #b91c1c;
+}
+
+.toggle-icon {
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  box-sizing: border-box;
+  height: 14px;
+  width: 14px;
+}
+
+.toggle.is-on .toggle-icon {
+  background: currentColor;
+  box-shadow: inset 0 0 0 3px #b91c1c;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1f2937;
+    color: #f9fafb;
+  }
+
+  p {
+    color: #cbd5e1;
+  }
+
+  .toggle:disabled {
+    background: #4b5563;
+    color: #cbd5e1;
+  }
+}
