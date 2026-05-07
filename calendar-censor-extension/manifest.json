@@ -10,9 +10,11 @@
   "host_permissions": [
     "https://calendar.google.com/*"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_title": "Toggle Calendar title censor",
-    "default_popup": "popup.html"
+    "default_title": "Toggle Calendar title censor"
   },
   "content_scripts": [
     {
