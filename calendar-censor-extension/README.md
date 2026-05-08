@@ -7,7 +7,7 @@ Local Chrome extension that toggles solid black censor bars over visible Google 
 1. Open `chrome://extensions`.
 2. Enable `Developer mode`.
 3. Choose `Load unpacked`.
-4. Select `/Users/linus/Documents/New project 2/calendar-censor-extension`.
+4. Select the `calendar-censor-extension` folder.
 
 ## Use It
 
